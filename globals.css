@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --primary-red: #C71920;
+  --dark-red: #991B1B;
+  --white: #FFFFFF;
+  --light-bg: #FFF7F7;
+  --dark-text: #1F2937;
+  --muted-text: #6B7280;
+}
+
+@theme {
+  --color-primary-red: #C71920;
+  --color-dark-red: #991B1B;
+  --color-light-bg: #FFF7F7;
+  --color-dark-text: #1F2937;
+  --color-muted-text: #6B7280;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #1F2937;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF7F7;
+}
+::-webkit-scrollbar-thumb {
+  background: #C71920;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #991B1B;
+}
+
+/* Accessibility focus indicator */
+*:focus-visible {
+  outline: 2px solid #C71920;
+  outline-offset: 2px;
+}
+
+/* Prevent layout shifts */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}

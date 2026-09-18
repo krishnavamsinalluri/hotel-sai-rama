@@ -129,14 +129,15 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/exterior/hotel-sai-rama-building.webp"
-            alt="Hotel Sai Rama Vijayawada Building Exterior"
+            alt="Hotel Sai Rama Vijayawada Building Exterior with Red Nameboard"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-bottom lg:object-[center_bottom]"
           />
-          {/* Dark Red and Black Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-red-950/80 to-black/75" />
+          {/* Dark Red and Black Gradient Overlay - Keeps building and nameboard visible */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-red-950/75 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
         </div>
 
         {/* Content Overlay */}

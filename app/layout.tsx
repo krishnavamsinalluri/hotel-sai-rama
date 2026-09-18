@@ -84,7 +84,9 @@ export default function RootLayout({
         <Footer />
         <FloatingActions />
         <MobileActionBar />
+
       </body>
     </html>
   );
+
 }
